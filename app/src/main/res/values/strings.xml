@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">StudyAndroid_1</string>
+    <string name="xin_chao">xin chào</string>
+    <string name="hello_linear">hello LinearLayout</string>
+    <string name="txt_userName">UserName</string>
+    <string name="txt_pass">Pass</string>
+    <string name="title_ui1">Dặn thuốc</string>
+    <string name="infor">Thông tin chung</string>
+    <string name="issue_title">Bệnh</string>
+    <string name="tv_startDate">Từ ngày</string>
+    <string name="tv_endDate">Đến ngày</string>
+    <string name="tv_number_medicine">Bạn hiện đang có 1 đơn thuốc</string>
+    <string name="tv_index_medicine">Đơn thuốc 1</string>
+    <string name="tv_use_medecine">Họat động uống thuốc</string>
+    <string name="STT">STT</string>
+    <string name="ten_thuoc">Tên thuốc</string>
+    <string name="don_vi">Đơn vị</string>
+    <string name="Lieu">Liều</string>
+    <string name="cai_dat">Caì đặt</string>
+    <string name="thiet_lap">Thiết lập chung</string>
+    <string name="ngon_ngu">Languages</string>
+    <string name="delete_memory">Xóa bộ nhớ</string>
+    <string name="update">cập nhật</string>
+    <string name="thiet_lap_noti">Thiết lập thông báo</string>
+    <string name="send_noti">Gửi thông báo</string>
+    <string name="music">am thanh</string>
+    <string name="rung">rung</string>
+    <string name="on">bật</string>
+    <string name="off">Tắt</string>
+    <string name="ky_danh">Ký danh</string>
+    <string name="mat_khau">mật khẩu</string>
+    <string name="save_mat_khau">Lưu mật khẩu</string>
+    <string name="quen_mat_khau">quên mật khẩu</string>
+    <string name="login">đăng nhập</string>
+    <string name="thay_doi_infor">Thay đổi thông tin tài khoản</string>
+    <string name="email">Email</string>
+    <string name="old_pass">Mật khẩu cũ</string>
+    <string name="new_pass">Mật khẩu mới</string>
+    <string name="re_new_pass">Nhập lại mật khẩu mới</string>
+    <string name="show_pass">Hiện mật khẩu</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="gop_y">Góp ý</string>
+    <string name="ho_ten">Họ tên</string>
+    <string name="noti">Quý phụ huynh nên sử dụng email của chính mình để được cập nhật thông tin thường xuyên</string>
+    <string name="inforTv">day la thong tin chiung .day la thong tin chiung .
+        day la thong tin chiung .day la thong tin chiung .
+    </string>
+</resources>

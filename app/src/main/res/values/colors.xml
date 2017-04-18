@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorYellow">#F14082</color>
+    <color name="colorInforTitle">#34cdde</color>
+    <color name="colorTextTitle">#fafcfc</color>
+    <color name="colorBkgUI1">#c9cccc</color>
+    <color name="colorBkgInfor">#fafcfc</color>
+    <color name="colorBlack">#081616</color>
+    <color name="color_white">#ffffff</color>
+    <color name="colorIndexMedecine">#3f8b8b</color>
+    <color name="color_bkg_title_ui2">#ed5558</color>
+    <color name="ui2_content">#806065</color>
+    <color name="ui3_title">#e7ae1d</color>
+</resources>
