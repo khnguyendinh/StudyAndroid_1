@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/colorBkgUI1"
     android:gravity="center_horizontal"
     android:orientation="vertical"
@@ -10,11 +10,12 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -104,7 +105,9 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/border4xam"
-                            android:textSize="@dimen/text_size_ui1" />
+                            android:textSize="@dimen/text_size_ui1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -137,22 +140,28 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         >
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/title_startDate"
-                            android:text="92017"
-                            android:layout_weight="1"
-                            android:layout_marginRight="5dp"
-                            />
 
                         <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_below="@id/title_startDate"
-                            android:text="17042017"
+                            android:layout_marginRight="5dp"
                             android:layout_weight="1"
-                            android:layout_marginLeft="5dp"/>
+                            android:text="92017"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"/>
+
+                        <EditText
+                            android:id="@+id/editText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/title_startDate"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="17042017" />
                     </LinearLayout>
 
 
@@ -172,7 +181,7 @@
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/border4green"
                 android:layout_gravity="center"
                 android:gravity="center"
@@ -278,7 +287,7 @@
                         android:layout_marginTop="5dp"
                         >
 
-                        <TextView
+                        <EditText
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:background="@color/colorBkgUI1"
@@ -288,39 +297,40 @@
                             android:layout_weight="2"
                             android:paddingTop="3dp"
                             android:paddingBottom="3dp"
-                            android:textSize="@dimen/text_size_ui1"/>
+                            android:textSize="@dimen/text_size_ui1"
+                            />
 
-                        <TextView
+                        <EditText
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:background="@color/colorBkgUI1"
                             android:gravity="center"
-                            android:textColor="@color/colorTextTitle"
+                            android:textColor="@color/colorBlack"
                             android:layout_weight="4"
                             android:layout_marginLeft="2dp"
                             android:textSize="@dimen/text_size_ui1"
                             android:paddingTop="3dp"
                             android:paddingBottom="3dp"/>
 
-                        <TextView
+                        <EditText
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:background="@color/colorBkgUI1"
                             android:gravity="center"
-                            android:textColor="@color/colorTextTitle"
+                            android:textColor="@color/colorBlack"
                             android:layout_weight="3"
                             android:layout_marginLeft="2dp"
                             android:textSize="@dimen/text_size_ui1"
                             android:paddingTop="3dp"
                             android:paddingBottom="3dp"/>
 
-                        <TextView
+                        <EditText
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:background="@color/colorBkgUI1"
                             android:gravity="center"
-                            android:textColor="@color/colorTextTitle"
+                            android:textColor="@color/colorBlack"
                             android:textSize="@dimen/text_size_ui1"
                             android:paddingTop="3dp"
                             android:paddingBottom="3dp"
@@ -332,7 +342,7 @@
                         android:layout_marginTop="5dp"
                         >
 
-                        <TextView
+                        <EditText
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:background="@color/colorBkgUI1"
@@ -344,37 +354,37 @@
                             android:paddingBottom="3dp"
                             android:textSize="@dimen/text_size_ui1"/>
 
-                        <TextView
+                        <EditText
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:background="@color/colorBkgUI1"
                             android:gravity="center"
-                            android:textColor="@color/colorTextTitle"
+                            android:textColor="@color/colorBlack"
                             android:layout_weight="4"
                             android:layout_marginLeft="2dp"
                             android:textSize="@dimen/text_size_ui1"
                             android:paddingTop="3dp"
                             android:paddingBottom="3dp"/>
 
-                        <TextView
+                        <EditText
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:background="@color/colorBkgUI1"
                             android:gravity="center"
-                            android:textColor="@color/colorTextTitle"
+                            android:textColor="@color/colorBlack"
                             android:layout_weight="3"
                             android:layout_marginLeft="2dp"
                             android:textSize="@dimen/text_size_ui1"
                             android:paddingTop="3dp"
                             android:paddingBottom="3dp"/>
 
-                        <TextView
+                        <EditText
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="2dp"
                             android:background="@color/colorBkgUI1"
                             android:gravity="center"
-                            android:textColor="@color/colorTextTitle"
+                            android:textColor="@color/colorBlack"
                             android:textSize="@dimen/text_size_ui1"
                             android:paddingTop="3dp"
                             android:paddingBottom="3dp"
@@ -387,7 +397,7 @@
             <Button
                 android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:background="@color/colorIndexMedecine"
+                android:background="@drawable/button_ui1"
                 android:text="Gui"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
