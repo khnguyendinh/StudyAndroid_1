@@ -106,53 +106,53 @@
                             android:background="@drawable/border4xam"
                             android:textSize="@dimen/text_size_ui1" />
                     </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="10dp">
-                    <TextView
-                        android:id="@+id/title_startDate"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/issue_title"
-                        android:text="@string/tv_startDate"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorBlack"
-                        android:layout_weight="1"/>
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:id="@+id/title_startDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/issue_title"
+                            android:text="@string/tv_startDate"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/issue_title"
-                        android:text="@string/tv_endDate"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorBlack"
-                        android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/issue_title"
+                            android:text="@string/tv_endDate"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:layout_weight="1"/>
                     </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    >
-                    <EditText
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/title_startDate"
-                        android:text="92017"
-                        android:layout_weight="1"
-                        android:layout_marginRight="5dp"
-                        />
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/title_startDate"
+                            android:text="92017"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp"
+                            />
 
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/title_startDate"
-                        android:text="17042017"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="5dp"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/title_startDate"
+                            android:text="17042017"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"/>
                     </LinearLayout>
 
 
@@ -212,7 +212,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/use_mede"
-                    android:layout_margin="10dp"
+                    android:layout_margin="5dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -253,7 +253,7 @@
                             android:gravity="center"
                             android:text="@string/don_vi"
                             android:textColor="@color/colorTextTitle"
-                            android:layout_weight="2"
+                            android:layout_weight="3"
                             android:textSize="@dimen/text_size_ui1"
                             android:paddingTop="3dp"
                             android:paddingBottom="3dp"/>
@@ -283,9 +283,9 @@
                             android:layout_height="wrap_content"
                             android:background="@color/colorBkgUI1"
                             android:gravity="center"
-                            android:text="1"
+                            android:text="2"
                             android:textColor="@color/colorBlack"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:paddingTop="3dp"
                             android:paddingBottom="3dp"
                             android:textSize="@dimen/text_size_ui1"/>
@@ -296,7 +296,7 @@
                             android:background="@color/colorBkgUI1"
                             android:gravity="center"
                             android:textColor="@color/colorTextTitle"
-                            android:layout_weight="3"
+                            android:layout_weight="4"
                             android:layout_marginLeft="2dp"
                             android:textSize="@dimen/text_size_ui1"
                             android:paddingTop="3dp"
@@ -308,7 +308,7 @@
                             android:background="@color/colorBkgUI1"
                             android:gravity="center"
                             android:textColor="@color/colorTextTitle"
-                            android:layout_weight="2"
+                            android:layout_weight="3"
                             android:layout_marginLeft="2dp"
                             android:textSize="@dimen/text_size_ui1"
                             android:paddingTop="3dp"
@@ -339,7 +339,7 @@
                             android:gravity="center"
                             android:text="1"
                             android:textColor="@color/colorBlack"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
                             android:paddingTop="3dp"
                             android:paddingBottom="3dp"
                             android:textSize="@dimen/text_size_ui1"/>
@@ -350,7 +350,7 @@
                             android:background="@color/colorBkgUI1"
                             android:gravity="center"
                             android:textColor="@color/colorTextTitle"
-                            android:layout_weight="3"
+                            android:layout_weight="4"
                             android:layout_marginLeft="2dp"
                             android:textSize="@dimen/text_size_ui1"
                             android:paddingTop="3dp"
@@ -362,7 +362,7 @@
                             android:background="@color/colorBkgUI1"
                             android:gravity="center"
                             android:textColor="@color/colorTextTitle"
-                            android:layout_weight="2"
+                            android:layout_weight="3"
                             android:layout_marginLeft="2dp"
                             android:textSize="@dimen/text_size_ui1"
                             android:paddingTop="3dp"
