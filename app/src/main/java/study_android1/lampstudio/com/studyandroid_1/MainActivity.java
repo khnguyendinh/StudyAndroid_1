@@ -10,7 +10,7 @@ import study_android1.lampstudio.com.studyandroid_1.presenter.Login.PresenterLog
 import study_android1.lampstudio.com.studyandroid_1.view.Login.ViewLogin;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, ViewLogin {
-    PresenterLogin presenterLogin;///
+    PresenterLogin presenterLogin;////
     EditText editTextPas ;
     EditText editTextUserName;
     String user_name, pass;
