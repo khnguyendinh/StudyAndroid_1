@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="15dp"
     android:background="@color/colorPrimary">
     <ImageView
         android:layout_width="100dp"
@@ -13,30 +14,32 @@
         android:layout_height="wrap_content"
         android:text="@string/ky_danh"
         android:textSize="@dimen/text_size_ui1"
-        android:paddingLeft="40dp"
         android:layout_marginTop="20dp"
         android:textColor="@color/colorTextTitle"/>
     <EditText
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:background="@color/colorInforTitle"
+        android:textSize="@dimen/text_size_ui1"
+        android:paddingLeft="5dp"
         android:layout_gravity="center"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mat_khau"
         android:textSize="@dimen/text_size_ui1"
-        android:paddingLeft="40dp"
         android:layout_marginTop="20dp"
         android:textColor="@color/colorTextTitle"/>
     <EditText
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:background="@color/colorInforTitle"
+        android:textSize="@dimen/text_size_ui1"
+        android:paddingLeft="5dp"
         android:layout_gravity="center"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,7 +48,8 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"/>
+            android:paddingLeft="0dp"
+            />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,11 +62,16 @@
         android:layout_height="40dp"
         android:text="@string/login"
         android:layout_gravity="center"
+        android:background="@drawable/button_ui4"
+        android:textColor="@color/color_white"
         />
     <Button
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:text="@string/quen_mat_khau"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_ui4"
+        android:textColor="@color/color_white"
         />
 </LinearLayout>
