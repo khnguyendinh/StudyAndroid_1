@@ -86,7 +86,6 @@
                             android:id="@+id/issue_title"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/infor_detail"
                             android:paddingRight="35dp"
                             android:layout_marginLeft="10dp"
                             android:background="@drawable/border4blue"
@@ -118,7 +117,6 @@
                             android:id="@+id/title_startDate"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/issue_title"
                             android:text="@string/tv_startDate"
                             android:textStyle="bold"
                             android:textColor="@color/colorBlack"
@@ -127,7 +125,6 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@+id/issue_title"
                             android:text="@string/tv_endDate"
                             android:textStyle="bold"
                             android:textColor="@color/colorBlack"
