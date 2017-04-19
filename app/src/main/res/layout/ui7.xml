@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_camera" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/ui7_title"
+        android:textColor="@color/colorYellow"
+        android:textSize="@dimen/text_size_ui7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border4black"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/ui7_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_ui1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border4black"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/mat_khau"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_ui1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border4red"
+            android:text="@string/login"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_ui1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/ui7_login_other"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_ui1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_alignParentRight="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/login_fb" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/login_gm" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/ui7_create_newAcc"
+                android:textColor="@color/colorBlack"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/quen_mat_khau"
+                android:layout_alignParentRight ="true"
+                android:textColor="@color/colorBlack"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/color_bkg_title_ui2"
+            android:layout_alignParentBottom="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="@string/ui7_Home"
+                android:textColor="@color/color_white"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="@string/ui7_Split"
+                android:textColor="@color/color_white"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="@string/ui7_Disco"
+                android:textColor="@color/color_white"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="@string/login"
+                android:textColor="@color/color_white"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

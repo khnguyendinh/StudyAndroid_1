@@ -6,5 +6,6 @@
     <dimen name="text_size_ui1">18dp</dimen>
     <dimen name="text_size_ui2">10dp</dimen>
     <dimen name="text_size_ui3">22dp</dimen>
+    <dimen name="text_size_ui7">35dp</dimen>
 
 </resources>

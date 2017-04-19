@@ -28,9 +28,9 @@
     <string name="on">bật</string>
     <string name="off">Tắt</string>
     <string name="ky_danh">Ký danh</string>
-    <string name="mat_khau">mật khẩu</string>
+    <string name="mat_khau">Mật khẩu</string>
     <string name="save_mat_khau">Lưu mật khẩu</string>
-    <string name="quen_mat_khau">quên mật khẩu</string>
+    <string name="quen_mat_khau">Quên mật khẩu</string>
     <string name="login">đăng nhập</string>
     <string name="thay_doi_infor">Thay đổi thông tin tài khoản</string>
     <string name="email">Email</string>
@@ -45,6 +45,13 @@
     <string name="ui2_title">Trang cá nhân</string>
     <string name="ui6_send">Gửi</string>
     <string name="ui6_noti">Đóng góp :( tối đa 400 ký tự)</string>
+    <string name="ui7_title">GAMEPORTAL</string>
+    <string name="ui7_name">Tên tài khoản</string>
+    <string name="ui7_create_newAcc">Tạo tài khoản mới</string>
+    <string name="ui7_login_other">Đăng nhập bằng tài khoản khác</string>
+    <string name="ui7_Home">Trang chủ</string>
+    <string name="ui7_Split">Phân loại</string>
+    <string name="ui7_Disco">Khám phá</string>
     <string name="noti">Quý phụ huynh nên sử dụng email của chính mình để được cập nhật thông tin thường xuyên</string>
     <string name="inforTv">day la thong tin chiung .day la thong tin chiung .
         day la thong tin chiung .day la thong tin chiung .
