@@ -30,30 +30,30 @@
                 android:textStyle="bold"
                 android:textColor="@color/color_white"/>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="200dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/transparent" />
-
+                android:layout_weight="1"
+                android:background="@drawable/ui3_selector" />
             <Button
-                android:layout_width="200dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="match_parent"
-                android:background="@android:color/transparent" />
-        </LinearLayout>
+                android:background="@drawable/ui3_selector"/>
+            </LinearLayout>
+
     </LinearLayout>
 
     <RelativeLayout
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="170dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="10dp">
-
+        android:layout_margin="10dp"
+        >
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -62,6 +62,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="5dp"
             android:orientation="vertical">
 
             <TextView
@@ -74,6 +76,7 @@
                 android:textColor="@color/colorBlack"/>
 
             <LinearLayout
+                android:id="@+id/langues"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
@@ -101,12 +104,11 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp" />
+                    android:layout_marginRight="5dp" />
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
                     android:background="@drawable/flag_vietnam" />
             </LinearLayout>
 
@@ -128,14 +130,14 @@
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="40dp"
-                    android:background="@color/colorAccent"
+                    android:background="@drawable/border4red"
                     android:text="@string/delete_memory"
                     android:textColor="@color/colorTextTitle" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal">
 
@@ -145,11 +147,14 @@
                     android:text="@string/update"
                     android:textSize="@dimen/text_size_ui3"
                     android:textStyle="bold"
+                    android:gravity="center"
                     android:textColor="@color/colorBlack"/>
 
                 <SeekBar
-                    android:layout_width="200dp"
-                    android:layout_height="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="40dp"
                     android:textColor="@color/colorTextTitle" />
@@ -159,10 +164,9 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="368dp"
-        android:layout_height="220dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="10dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
 
         <ImageView
             android:layout_width="match_parent"
@@ -172,7 +176,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="5dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -185,94 +190,103 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal">
                 <LinearLayout
                     android:layout_width="180dp"
                     android:orientation="vertical"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
                     android:text="@string/send_noti"
                     android:textSize="@dimen/text_size_ui3"
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"/>
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:text="@string/on"
                         android:textSize="@dimen/text_size_ui1"
                         android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
                         />
                     </LinearLayout>
 
                 <ToggleButton
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="30dp" />
 
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal">
                 <LinearLayout
                     android:layout_width="180dp"
                     android:orientation="vertical"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
                         android:text="@string/music"
                         android:textSize="@dimen/text_size_ui3"
                         android:textStyle="bold"
                         android:textColor="@color/colorBlack"/>
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:text="@string/on"
                         android:textSize="@dimen/text_size_ui1"
                         android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
                         />
                 </LinearLayout>
 
                 <ToggleButton
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="30dp" />
 
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal">
                 <LinearLayout
                     android:layout_width="180dp"
                     android:orientation="vertical"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="35dp"
+                        android:layout_height="match_parent"
                         android:text="@string/rung"
                         android:textSize="@dimen/text_size_ui3"
                         android:textStyle="bold"
-                        android:textColor="@color/colorBlack"/>
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="2"/>
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:text="@string/on"
                         android:textSize="@dimen/text_size_ui1"
                         android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
                         />
                 </LinearLayout>
 
                 <ToggleButton
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="30dp" />
 
             </LinearLayout>
