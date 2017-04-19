@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/ui1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UI 1"
+                />
+            <Button
+                android:id="@+id/ui2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UI 2"
+                />
+            <Button
+                android:id="@+id/ui3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UI 3"
+                />
+            <Button
+                android:id="@+id/ui4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UI 4"
+                />
+            <Button
+                android:id="@+id/ui5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UI 5"
+                />
+            <Button
+                android:id="@+id/ui6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UI 6"
+                />
+            <Button
+                android:id="@+id/ui7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UI 7"
+                />
+            <Button
+                android:id="@+id/horizoltal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Horizontal Scrollview"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -21,6 +21,7 @@
             android:textSize="@dimen/text_size_ui3" />
 
         <Button
+            android:id="@+id/back"
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:background="@drawable/back"

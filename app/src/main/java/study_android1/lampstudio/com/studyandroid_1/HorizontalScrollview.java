@@ -10,11 +10,11 @@ import android.widget.Button;
  * Created by VS9 X64Bit on 17/04/2017.
  */
 
-public class UI6 extends Activity implements View.OnClickListener{
+public class HorizontalScrollview extends Activity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ui6);
+        setContentView(R.layout.horizontal_scroll);
         Button btnBack = (Button) findViewById(R.id.back);
         btnBack.setOnClickListener(this);
     }
