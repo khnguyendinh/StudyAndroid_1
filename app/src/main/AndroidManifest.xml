@@ -36,6 +36,11 @@
             android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="adjustPan">
 
+
+        </activity>
+        <activity android:name=".UI6"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

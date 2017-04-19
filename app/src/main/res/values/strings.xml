@@ -39,9 +39,12 @@
     <string name="re_new_pass">Nhập lại mật khẩu mới</string>
     <string name="show_pass">Hiện mật khẩu</string>
     <string name="phone">Số điện thoại</string>
+    <string name="dthoai">Điện thoại</string>
     <string name="gop_y">Góp ý</string>
     <string name="ho_ten">Họ tên</string>
     <string name="ui2_title">Trang cá nhân</string>
+    <string name="ui6_send">Gửi</string>
+    <string name="ui6_noti">Đóng góp :( tối đa 400 ký tự)</string>
     <string name="noti">Quý phụ huynh nên sử dụng email của chính mình để được cập nhật thông tin thường xuyên</string>
     <string name="inforTv">day la thong tin chiung .day la thong tin chiung .
         day la thong tin chiung .day la thong tin chiung .
