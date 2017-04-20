@@ -24,6 +24,7 @@ public class DemoScrollView extends Activity implements View.OnClickListener{
         Button btnUi5 = (Button) findViewById(R.id.ui5);
         Button btnUi6 = (Button) findViewById(R.id.ui6);
         Button btnUi7 = (Button) findViewById(R.id.ui7);
+        Button btnBai3 = (Button) findViewById(R.id.bai3);
         Button btnHorizontall = (Button) findViewById(R.id.horizoltal);
         btnUi1.setOnClickListener(this);
         btnUi2.setOnClickListener(this);
@@ -33,6 +34,7 @@ public class DemoScrollView extends Activity implements View.OnClickListener{
         btnUi6.setOnClickListener(this);
         btnUi7.setOnClickListener(this);
         btnHorizontall.setOnClickListener(this);
+        btnBai3.setOnClickListener(this);
     }
 
     @Override
@@ -68,6 +70,10 @@ public class DemoScrollView extends Activity implements View.OnClickListener{
                 break;
             case R.id.horizoltal:
                 intent = new Intent(this,HorizontalScrollview.class);
+                startActivity(intent);
+                break;
+            case R.id.bai3:
+                intent = new Intent(this,Bai3.class);
                 startActivity(intent);
                 break;
         }

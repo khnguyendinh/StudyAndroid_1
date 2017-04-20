@@ -58,6 +58,12 @@
                 android:layout_height="wrap_content"
                 android:text="Horizontal Scrollview"
                 />
+            <Button
+                android:id="@+id/bai3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bai 3"
+                />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

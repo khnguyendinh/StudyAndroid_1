@@ -1,0 +1,2 @@
+1 tại  sao dùng seekbar có giao diện khác
+2 làm 2 cái tab trong bài 7 ntn
