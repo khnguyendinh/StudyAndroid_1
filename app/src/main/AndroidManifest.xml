@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="study_android1.lampstudio.com.studyandroid_1">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -59,6 +59,10 @@
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity android:name=".Bai3"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name=".Bai4"
             android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="adjustPan">
         </activity>

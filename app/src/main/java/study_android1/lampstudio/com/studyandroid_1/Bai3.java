@@ -1,6 +1,7 @@
 package study_android1.lampstudio.com.studyandroid_1;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.util.Log;
@@ -89,6 +90,8 @@ public class Bai3 extends Activity implements CompoundButton.OnCheckedChangeList
                 ios.setChecked(false);
                 window.setChecked(false);
                 android.setChecked(false);
+                Intent intent =  new Intent(this,DemoScrollView.class);
+                startActivity(intent);
                 break;
         }
     }
