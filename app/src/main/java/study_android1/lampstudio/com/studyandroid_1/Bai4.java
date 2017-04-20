@@ -1,12 +1,14 @@
 package study_android1.lampstudio.com.studyandroid_1;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.ProgressBar;
 import android.widget.VideoView;
@@ -21,6 +23,14 @@ public class Bai4 extends Activity {
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bai4);
+        Button btnback = (Button) findViewById(R.id.back);
+        btnback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent itent = new Intent(Bai4.this,DemoScrollView.class);
+                startActivity(itent);
+            }
+        });
         final ProgressBar progressBar = (ProgressBar) findViewById(R.id.progress);
         WebView webView = (WebView) findViewById(R .id.webview);
         webView.setWebViewClient(new WebViewClient(){

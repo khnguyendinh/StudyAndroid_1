@@ -66,6 +66,14 @@
             android:theme="@android:style/Theme.Black.NoTitleBar"
             android:windowSoftInputMode="adjustPan">
         </activity>
+        <activity android:name=".Bai5"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name=".Bai6"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
     </application>
 
 </manifest>

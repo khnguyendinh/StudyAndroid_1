@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -28,6 +27,8 @@ public class DemoScrollView extends Activity implements View.OnClickListener{
         Button btnBai3 = (Button) findViewById(R.id.bai3);
         Button btnHorizontall = (Button) findViewById(R.id.horizoltal);
         Button btnBai4 = (Button) findViewById(R.id.bai4);
+        Button btnBai5 = (Button) findViewById(R.id.bai5);
+        Button btnBai6 = (Button) findViewById(R.id.bai6);
         btnUi1.setOnClickListener(this);
         btnUi2.setOnClickListener(this);
         btnUi3.setOnClickListener(this);
@@ -38,6 +39,8 @@ public class DemoScrollView extends Activity implements View.OnClickListener{
         btnHorizontall.setOnClickListener(this);
         btnBai3.setOnClickListener(this);
         btnBai4.setOnClickListener(this);
+        btnBai5.setOnClickListener(this);
+        btnBai6.setOnClickListener(this);
     }
 
     @Override
@@ -81,7 +84,14 @@ public class DemoScrollView extends Activity implements View.OnClickListener{
                 break;
             case R.id.bai4:
                 intent = new Intent(this,Bai4.class);
-                Log.d("bai4  ","come in");
+                startActivity(intent);
+                break;
+            case R.id.bai5:
+                intent = new Intent(this,Bai5.class);
+                startActivity(intent);
+                break;
+            case R.id.bai6:
+                intent = new Intent(this,Bai6.class);
                 startActivity(intent);
                 break;
         }
