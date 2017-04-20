@@ -18,9 +18,11 @@ import android.widget.SeekBar;
  */
 
 public class Bai3 extends Activity implements CompoundButton.OnCheckedChangeListener,RadioGroup.OnCheckedChangeListener , View.OnClickListener{
+
     CheckBox android;
     RadioButton ios;
     RadioButton window;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,8 @@ public class Bai3 extends Activity implements CompoundButton.OnCheckedChangeList
         ImageButton imageButton = (ImageButton) findViewById(R.id.btnImg);
         imageButton.setOnClickListener(this);
         SeekBar seekBar = (SeekBar) findViewById(R.id.seekbar);
+
+
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -54,6 +58,7 @@ public class Bai3 extends Activity implements CompoundButton.OnCheckedChangeList
                 Log.d("seekbar ","stop value "+seekBar.getProgress());
             }
         });
+//        btn_switch.setOnClickListener(this);
 
     }
 
@@ -85,14 +90,17 @@ public class Bai3 extends Activity implements CompoundButton.OnCheckedChangeList
 
     @Override
     public void onClick(View view) {
+        Log.d("dasd","touch khoand");
         switch (view.getId()){
             case R.id.btnImg:
+                Log.d("asdad","touch khoand2");
                 ios.setChecked(false);
                 window.setChecked(false);
                 android.setChecked(false);
                 Intent intent =  new Intent(this,DemoScrollView.class);
                 startActivity(intent);
                 break;
+
         }
     }
 }

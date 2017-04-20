@@ -22,7 +22,7 @@
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity android:name=".UI3"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
 
 

@@ -1,5 +1,0 @@
-1 tại  sao dùng seekbar có giao diện khác
-2 làm 2 cái tab trong bài 7 ntn
-3 lúc overide các hàm sao ko hiện tên biến như bthg để nhận diện được tham số
-4 các compotnent timepicker datapicker nhìn cũ?
-5 color activity mặc định màu đen,lúc đầu default trắng cả

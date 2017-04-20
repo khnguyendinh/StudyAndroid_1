@@ -24,38 +24,37 @@
                 android:background="@drawable/home" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:text="@string/cai_dat"
+                android:textColor="@color/color_white"
                 android:textSize="@dimen/text_size"
-                android:textStyle="bold"
-                android:textColor="@color/color_white"/>
+                android:textStyle="bold" />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                 />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal">
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/ui3_selector" />
-            <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:background="@drawable/ui3_selector"/>
-            </LinearLayout>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.design.widget.TabLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="170dp"
-        android:layout_margin="10dp"
-        >
+        android:layout_margin="10dp">
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -64,18 +63,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingLeft="5dp"
             android:layout_marginRight="5dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/thiet_lap"
+                android:textColor="@color/colorBlack"
                 android:textSize="@dimen/text_size_ui3"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack"/>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/langues"
@@ -88,9 +87,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/ngon_ngu"
+                    android:textColor="@color/colorBlack"
                     android:textSize="@dimen/text_size_ui3"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorBlack"/>
+                    android:textStyle="bold" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -124,9 +123,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/delete_memory"
+                    android:textColor="@color/colorBlack"
                     android:textSize="@dimen/text_size_ui3"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorBlack"/>
+                    android:textStyle="bold" />
 
                 <Button
                     android:layout_width="100dp"
@@ -146,20 +145,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/update"
-                    android:textSize="@dimen/text_size_ui3"
-                    android:textStyle="bold"
                     android:gravity="center"
-                    android:textColor="@color/colorBlack"/>
+                    android:text="@string/update"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_ui3"
+                    android:textStyle="bold" />
 
                 <SeekBar
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="10dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="40dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
                     android:textColor="@color/colorTextTitle" />
+
             </LinearLayout>
         </LinearLayout>
 
@@ -186,70 +186,77 @@
                 android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/thiet_lap_noti"
+                android:textColor="@color/colorBlack"
                 android:textSize="@dimen/text_size_ui3"
-                android:textStyle="bold"
-                android:textColor="@color/colorBlack" />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal">
+
                 <LinearLayout
                     android:layout_width="180dp"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:text="@string/send_noti"
-                    android:textSize="@dimen/text_size_ui3"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorBlack"/>
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="@string/send_noti"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_ui3"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="@string/on"
-                        android:textSize="@dimen/text_size_ui1"
-                        android:textStyle="bold"
                         android:textColor="@color/colorBlack"
-                        />
-                    </LinearLayout>
+                        android:textSize="@dimen/text_size_ui1"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
-                <ToggleButton
+                <include
+                    android:id="@+id/btn_switch"
+                    layout="@layout/switch_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="30dp" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal">
+
                 <LinearLayout
                     android:layout_width="180dp"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
                         android:text="@string/music"
+                        android:textColor="@color/colorBlack"
                         android:textSize="@dimen/text_size_ui3"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorBlack"/>
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="@string/on"
-                        android:textSize="@dimen/text_size_ui1"
-                        android:textStyle="bold"
                         android:textColor="@color/colorBlack"
-                        />
+                        android:textSize="@dimen/text_size_ui1"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <ToggleButton
@@ -258,32 +265,35 @@
                     android:layout_marginLeft="30dp" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:orientation="horizontal">
+
                 <LinearLayout
                     android:layout_width="180dp"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:layout_weight="2"
                         android:text="@string/rung"
-                        android:textSize="@dimen/text_size_ui3"
-                        android:textStyle="bold"
                         android:textColor="@color/colorBlack"
-                        android:layout_weight="2"/>
+                        android:textSize="@dimen/text_size_ui3"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="@string/on"
-                        android:textSize="@dimen/text_size_ui1"
-                        android:textStyle="bold"
                         android:textColor="@color/colorBlack"
-                        />
+                        android:textSize="@dimen/text_size_ui1"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <ToggleButton

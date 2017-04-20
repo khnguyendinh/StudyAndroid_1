@@ -62,4 +62,5 @@ public class Bai6 extends Activity implements AdapterView.OnItemClickListener,Vi
 //        arrayAdapter.notifyDataSetChanged();
 //        Log.d(TAG, "onClick: "+inpot);
     }
+
 }
