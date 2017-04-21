@@ -61,8 +61,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:background="@color/colorAccent"></LinearLayout>
+        android:background="@color/colorAccent">
+        <ListView
+            android:id="@+id/lv_fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+    </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

@@ -3,9 +3,20 @@ package study_android1.lampstudio.com.studyandroid_1;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+
+import study_android1.lampstudio.com.studyandroid_1.football.CustomAdapterFB;
+import study_android1.lampstudio.com.studyandroid_1.football.InforChampang;
+import study_android1.lampstudio.com.studyandroid_1.football.Informatch;
+import study_android1.lampstudio.com.studyandroid_1.football.ItemFootBall;
 
 public class FootBall extends AppCompatActivity {
     TabLayout tabLayout1 ;
+    ListView listView;
+    ArrayList<ItemFootBall> data;
+    CustomAdapterFB arrayAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,5 +30,19 @@ public class FootBall extends AppCompatActivity {
         tabLayout1.addTab(tabItem2);
         tabLayout1.addTab(tabItem3);
         tabLayout1.addTab(tabItem4);
+        listView = (ListView) findViewById(R.id.lv_fb);
+        InforChampang c1 = new InforChampang("19-10","C1");
+        InforChampang c2 = new InforChampang("19-10","C2");
+        InforChampang c3= new InforChampang("19-10","C3");
+        data =new ArrayList<>();
+        Informatch informatch = new Informatch("a","b",1,2,true,false, Informatch.STATUS.AET);
+        ItemFootBall itemFootBall1 = new ItemFootBall(ItemFootBall.TYPE_FB.TITLE,informatch,c1);
+        ItemFootBall itemFootBall2 = new ItemFootBall(ItemFootBall.TYPE_FB.TITLE,informatch,c2);
+        ItemFootBall itemFootBall3 = new ItemFootBall(ItemFootBall.TYPE_FB.MATCH,informatch,c3);
+        data.add(itemFootBall1);
+        data.add(itemFootBall2);
+        data.add(itemFootBall3);
+        arrayAdapter = new CustomAdapterFB(FootBall.this, data);
+        listView.setAdapter(arrayAdapter);
     }
 }
