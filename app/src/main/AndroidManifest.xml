@@ -1,79 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="study_android1.lampstudio.com.studyandroid_1">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        >
-        <activity android:name=".MainActivity">
-
-
-        </activity>
-        <activity android:name=".UI1"
+        android:supportsRtl="true">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".UI1"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-
-        </activity>
-        <activity android:name=".UI2"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UI2"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-        <activity android:name=".UI3"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UI3"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-
-
-        </activity>
-        <activity android:name=".UI4"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UI4"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-
-        </activity>
-        <activity android:name=".UI5"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UI5"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-
-
-        </activity>
-        <activity android:name=".UI6"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UI6"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-        <activity android:name=".UI7"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UI7"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-        <activity android:name=".DemoScrollView"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DemoScrollView"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HorizontalScrollview"
+        <activity
+            android:name=".HorizontalScrollview"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-        <activity android:name=".Bai3"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bai3"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-        <activity android:name=".Bai4"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bai4"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-        <activity android:name=".Bai5"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bai5"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-        <activity android:name=".Bai6"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bai6"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UI_dat_ve"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".FootBall"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

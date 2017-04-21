@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/ui_dv_index"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="10dp"/>
+    <include
+        layout="@layout/number_dv"
+        />
+    <include
+        layout="@layout/number_dv"
+        />
+    <include
+        layout="@layout/number_dv"
+        />
+    <include
+        layout="@layout/number_dv"
+        />
+    <include
+        layout="@layout/number_dv"
+        />
+    <include
+        layout="@layout/number_dv"
+        />
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/delete_icon"
+        android:layout_marginRight="10dp"
+        />
+</LinearLayout>

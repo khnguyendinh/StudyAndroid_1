@@ -54,8 +54,26 @@
     <string name="ui7_Split">Phân loại</string>
     <string name="ui7_Disco">Khám phá</string>
     <string name="ui2_log_out">Đăng xuất</string>
+    <string name="ui_dv_titel">Đặt vé 6/45</string>
+    <string name="ui_dv_Select_play">Chọn cách chơi</string>
+    <string name="ui_dv_how_play">Cách chơi</string>
+    <string name="ui_dv_title2">Dãy số dự thưởng</string>
+    <string name="ui_dv_title3">Chu kỳ tham dự</string>
+    <string name="ui_dv_title4">Chọn loại vé</string>
+    <string name="ui_dv_notice">(*)Cơ hội trúng thưởng dành cho tất cả mọi người</string>
+    <string name="ui_dv_index">#A</string>
+    <string name="ui_dv_radio_1">Vé giữ hô(MIỄN PHÍ)</string>
+    <string name="ui_dv_radio_2">Vé giao tận nơi</string>
+    <string name="ui_dv_radio_3">Vé nhận tại đại lý</string>
+    <string name="ui_dv_tong_tien">Tổng tiền thanh toán</string>
+    <string name="ui_dv_DAT_VE">ĐẶT VÉ</string>
     <string name="noti">Quý phụ huynh nên sử dụng email của chính mình để được cập nhật thông tin thường xuyên</string>
     <string name="inforTv">day la thong tin chiung .day la thong tin chiung .
         day la thong tin chiung .day la thong tin chiung .
     </string>
+    <string-array name="array_spiner">
+        <item>Tự chọn 6 số</item>
+        <item>Tự chọn 7 số</item>
+        <item>Tự chọn 8 số</item>
+    </string-array>
 </resources>
