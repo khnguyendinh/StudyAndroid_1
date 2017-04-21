@@ -37,6 +37,7 @@
     <string name="old_pass">Mật khẩu cũ</string>
     <string name="new_pass">Mật khẩu mới</string>
     <string name="re_new_pass">Nhập lại mật khẩu mới</string>
+    <string name="change_pass">Đổi mật khẩu</string>
     <string name="show_pass">Hiện mật khẩu</string>
     <string name="phone">Số điện thoại</string>
     <string name="dthoai">Điện thoại</string>
@@ -52,6 +53,7 @@
     <string name="ui7_Home">Trang chủ</string>
     <string name="ui7_Split">Phân loại</string>
     <string name="ui7_Disco">Khám phá</string>
+    <string name="ui2_log_out">Đăng xuất</string>
     <string name="noti">Quý phụ huynh nên sử dụng email của chính mình để được cập nhật thông tin thường xuyên</string>
     <string name="inforTv">day la thong tin chiung .day la thong tin chiung .
         day la thong tin chiung .day la thong tin chiung .

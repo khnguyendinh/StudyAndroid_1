@@ -276,16 +276,7 @@
                     android:text="The luc "
                     android:textColor="@color/colorTextTitle"
                     android:textStyle="bold" />
-                <LinearLayout
-                    android:id="@+id/list_red"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/border4brown"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-                </LinearLayout>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -299,6 +290,17 @@
                     android:text="tang the luc"
                     android:textColor="@color/colorTextTitle"
                     android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/list_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border4brown"
+                    android:orientation="horizontal">
+                </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
@@ -307,22 +309,11 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_margin="5dp">
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="@color/color_bkg_title_ui2"
-            android:text="Doi mat khau"
-            android:layout_weight="1"
-            android:textColor="@color/colorTextTitle" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="3dp"
-            android:layout_weight="1"
-            android:background="@color/color_bkg_title_ui2"
-            android:text="Dang xuat"
-            android:textColor="@color/colorTextTitle" />
+        <include
+            layout="@layout/btn_change_pas"
+            />
+        <include
+            layout="@layout/btn_log_out"
+            />
     </LinearLayout>
 </LinearLayout>
