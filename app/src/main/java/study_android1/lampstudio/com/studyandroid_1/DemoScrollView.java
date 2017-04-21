@@ -31,6 +31,7 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         Button btnBai6 = (Button) findViewById(R.id.bai6);
         Button btnDV = (Button) findViewById(R.id.ui_datve);
         Button btnFB = (Button) findViewById(R.id.ui_football);
+        Button btnBai7 = (Button) findViewById(R.id.bai7);
         btnUi1.setOnClickListener(this);
         btnUi2.setOnClickListener(this);
         btnUi3.setOnClickListener(this);
@@ -45,6 +46,7 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         btnBai6.setOnClickListener(this);
         btnDV.setOnClickListener(this);
         btnFB.setOnClickListener(this);
+        btnBai7.setOnClickListener(this);
     }
 
     @Override
@@ -104,6 +106,10 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.ui_football:
                 intent = new Intent(this,FootBall.class);
+                startActivity(intent);
+                break;
+            case R.id.bai7:
+                intent = new Intent(this,Bai7.class);
                 startActivity(intent);
                 break;
         }

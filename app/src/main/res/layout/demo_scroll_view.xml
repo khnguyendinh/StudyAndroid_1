@@ -91,6 +91,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Foot ball"/>
+            <Button
+                android:id="@+id/bai7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bai 7"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
