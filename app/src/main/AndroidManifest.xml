@@ -13,12 +13,12 @@
 
         </activity>
         <activity android:name=".UI1"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
 
         </activity>
         <activity android:name=".UI2"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity android:name=".UI3"
@@ -28,26 +28,26 @@
 
         </activity>
         <activity android:name=".UI4"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
 
         </activity>
         <activity android:name=".UI5"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
 
 
         </activity>
         <activity android:name=".UI6"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity android:name=".UI7"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity android:name=".DemoScrollView"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,19 +55,19 @@
             </intent-filter>
         </activity>
         <activity android:name=".HorizontalScrollview"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity android:name=".Bai3"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity android:name=".Bai4"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity android:name=".Bai5"
-            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan">
         </activity>
         <activity android:name=".Bai6"

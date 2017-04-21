@@ -1,8 +1,8 @@
 package study_android1.lampstudio.com.studyandroid_1;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -11,7 +11,7 @@ import android.widget.Button;
  * Created by VS9 X64Bit on 17/04/2017.
  */
 
-public class UI4 extends Activity implements OnClickListener{
+public class UI4 extends AppCompatActivity implements OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

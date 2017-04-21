@@ -1,11 +1,11 @@
 package study_android1.lampstudio.com.studyandroid_1;
 
-import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -18,7 +18,7 @@ import java.util.Calendar;
  * Created by VS9 X64Bit on 20/04/2017.
  */
 
-public class Bai5 extends Activity implements View.OnClickListener{
+public class Bai5 extends AppCompatActivity implements View.OnClickListener{
     TextView textView;
     DatePicker datePicker;
     @Override

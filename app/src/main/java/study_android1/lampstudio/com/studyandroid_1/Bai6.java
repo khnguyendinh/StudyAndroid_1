@@ -1,8 +1,8 @@
 package study_android1.lampstudio.com.studyandroid_1;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -18,7 +18,7 @@ import study_android1.lampstudio.com.studyandroid_1.bai6.ItemModel;
  * Created by VS9 X64Bit on 20/04/2017.
  */
 
-public class Bai6 extends Activity implements AdapterView.OnItemClickListener,View.OnClickListener{
+public class Bai6 extends AppCompatActivity implements AdapterView.OnItemClickListener,View.OnClickListener{
     EditText name;
     Button btnShow;
     ListView listView;

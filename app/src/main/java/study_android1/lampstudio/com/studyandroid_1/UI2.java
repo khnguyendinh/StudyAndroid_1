@@ -1,8 +1,8 @@
 package study_android1.lampstudio.com.studyandroid_1;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
  * Created by VS9 X64Bit on 17/04/2017.
  */
 
-public class UI2 extends Activity implements View.OnClickListener{
+public class UI2 extends AppCompatActivity implements View.OnClickListener{
     LinearLayout list_red;
     LayoutInflater layoutInflater;
 

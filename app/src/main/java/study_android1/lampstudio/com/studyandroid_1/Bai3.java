@@ -1,9 +1,9 @@
 package study_android1.lampstudio.com.studyandroid_1;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
@@ -17,7 +17,7 @@ import android.widget.SeekBar;
  * Created by VS9 X64Bit on 20/04/2017.
  */
 
-public class Bai3 extends Activity implements CompoundButton.OnCheckedChangeListener,RadioGroup.OnCheckedChangeListener , View.OnClickListener{
+public class Bai3 extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener,RadioGroup.OnCheckedChangeListener , View.OnClickListener{
 
     CheckBox android;
     RadioButton ios;

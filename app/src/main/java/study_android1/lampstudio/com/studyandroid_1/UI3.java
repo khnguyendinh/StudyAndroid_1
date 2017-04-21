@@ -32,12 +32,10 @@ public class UI3 extends AppCompatActivity implements View.OnClickListener{
         tv_on.setOnClickListener(this);
         tv_off.setOnClickListener(this);
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        TabLayout.Tab tab1 = tabLayout.newTab().setText("aaa");
-        TabLayout.Tab tab2 = tabLayout.newTab().setText("bbb");
-        TabLayout.Tab tab3 = tabLayout.newTab().setText("ccc");
+        TabLayout.Tab tab1 = tabLayout.newTab().setText("Cài đặt").setIcon(R.drawable.setting_icon);
+        TabLayout.Tab tab2 = tabLayout.newTab().setText("Góp ý").setIcon(R.drawable.chat_icon);
         tabLayout.addTab(tab1);
         tabLayout.addTab(tab2);
-        tabLayout.addTab(tab3);
 
     }
 

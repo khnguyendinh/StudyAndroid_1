@@ -1,10 +1,10 @@
 package study_android1.lampstudio.com.studyandroid_1;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -17,7 +17,7 @@ import android.widget.VideoView;
  * Created by VS9 X64Bit on 20/04/2017.
  */
 
-public class Bai4 extends Activity {
+public class Bai4 extends AppCompatActivity {
     VideoView videoView;
     @Override
     protected void onCreate( Bundle savedInstanceState) {
