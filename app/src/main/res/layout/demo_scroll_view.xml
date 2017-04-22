@@ -111,6 +111,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Bai 9"/>
+            <Button
+                android:id="@+id/bai10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bai 10"/>
+            <Button
+                android:id="@+id/bai11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bai 11"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

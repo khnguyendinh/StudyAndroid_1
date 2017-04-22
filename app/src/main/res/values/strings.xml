@@ -78,4 +78,8 @@
     </string-array>
     <string name="title_activity_bai8_2">Bai8_2</string>
     <string name="title_activity_bai9">Bai9</string>
+    <string name="title_activity_bai10">Bai10</string>
+    <string name="title_activity_bai10_2">Bai10_2</string>
+    <string name="title_activity_bai11">Bai11</string>
+    <string name="title_activity_dat_cuoc">Dat_cuoc</string>
 </resources>
