@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import study_android1.lampstudio.com.studyandroid_1.Bai9.Bai9;
 import study_android1.lampstudio.com.studyandroid_1.bai8.Bai8_2;
 
 /**
@@ -36,6 +37,7 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         Button btnBai7 = (Button) findViewById(R.id.bai7);
         Button btnBai8 = (Button) findViewById(R.id.bai8);
         Button btnBai8_2 = (Button) findViewById(R.id.bai8_2);
+        Button btnBai9 = (Button) findViewById(R.id.bai9);
         btnUi1.setOnClickListener(this);
         btnUi2.setOnClickListener(this);
         btnUi3.setOnClickListener(this);
@@ -53,6 +55,7 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         btnBai7.setOnClickListener(this);
         btnBai8.setOnClickListener(this);
         btnBai8_2.setOnClickListener(this);
+        btnBai9.setOnClickListener(this);
     }
 
     @Override
@@ -124,6 +127,10 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.bai8_2:
                 intent = new Intent(this,Bai8_2.class);
+                startActivity(intent);
+                break;
+            case R.id.bai9:
+                intent = new Intent(this,Bai9.class);
                 startActivity(intent);
                 break;
         }

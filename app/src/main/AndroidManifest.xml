@@ -3,6 +3,8 @@
     package="study_android1.lampstudio.com.studyandroid_1">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -86,8 +88,13 @@
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".bai8.Bai8_2"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:label="@string/title_activity_bai8_2"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bai9.Bai9"
+            android:label="@string/title_activity_bai9"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan"></activity>
     </application>
 
