@@ -27,7 +27,8 @@
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone">
+        android:visibility="gone"
+        >
 
     </ListView>
     <GridView
@@ -36,6 +37,7 @@
         android:layout_height="match_parent"
         android:columnWidth="90dp"
         android:stretchMode="columnWidth"
-        android:numColumns="auto_fit"></GridView>
+        android:numColumns="auto_fit"
+        ></GridView>
 
 </LinearLayout>

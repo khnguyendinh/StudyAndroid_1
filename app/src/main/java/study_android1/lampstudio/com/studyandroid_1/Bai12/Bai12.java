@@ -6,9 +6,9 @@ import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import study_android1.lampstudio.com.studyandroid_1.R;
 
@@ -42,16 +42,17 @@ public class Bai12 extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.btn_start:
-                boundService.playMusic();
-                Log.d("Bai12","time "+boundService.getTotalTime());
-//                Intent intentStart = new Intent(Bai12.this,StartedService.class);
-//                startService(intentStart);
+//                boundService.playMusic();
+//                Log.d("Bai12","time "+boundService.getTotalTime());
+                Intent intentStart = new Intent(Bai12.this,StartedService.class);
+                startService(intentStart);
 
                 break;
             case R.id.btn_stop:
-                boundService.StopMusic();
-//                Intent intentStop = new Intent(Bai12.this,StartedService.class);
-//                stopService(intentStop);
+//                boundService.StopMusic();
+                Intent intentStop = new Intent(Bai12.this,StartedService.class);
+                stopService(intentStop);
+                Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

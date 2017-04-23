@@ -39,9 +39,19 @@ public class FootBall extends AppCompatActivity {
         ItemFootBall itemFootBall1 = new ItemFootBall(ItemFootBall.TYPE_FB.TITLE,informatch,c1);
         ItemFootBall itemFootBall2 = new ItemFootBall(ItemFootBall.TYPE_FB.TITLE,informatch,c2);
         ItemFootBall itemFootBall3 = new ItemFootBall(ItemFootBall.TYPE_FB.MATCH,informatch,c3);
+        ItemFootBall itemFootBall4 = new ItemFootBall(ItemFootBall.TYPE_FB.MATCH,informatch,c3);
+        ItemFootBall itemFootBall5 = new ItemFootBall(ItemFootBall.TYPE_FB.MATCH,informatch,c3);
+        ItemFootBall itemFootBall6 = new ItemFootBall(ItemFootBall.TYPE_FB.MATCH,informatch,c3);
+        ItemFootBall itemFootBall7 = new ItemFootBall(ItemFootBall.TYPE_FB.MATCH,informatch,c3);
+        ItemFootBall itemFootBall8 = new ItemFootBall(ItemFootBall.TYPE_FB.MATCH,informatch,c3);
         data.add(itemFootBall1);
         data.add(itemFootBall2);
         data.add(itemFootBall3);
+        data.add(itemFootBall4);
+        data.add(itemFootBall5);
+        data.add(itemFootBall6);
+        data.add(itemFootBall7);
+        data.add(itemFootBall8);
         arrayAdapter = new CustomAdapterFB(FootBall.this, data);
         listView.setAdapter(arrayAdapter);
     }

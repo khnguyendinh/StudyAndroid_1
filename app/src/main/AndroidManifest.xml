@@ -136,10 +136,16 @@
             android:name=".Bai12.Bai12"
             android:label="@string/title_activity_bai12"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan"></activity>
-        <service android:name=".Bai12.StartedService"/>
-        <service android:name=".Bai12.BoundService"/>
+            android:windowSoftInputMode="adjustPan" />
 
+        <service
+            android:name=".Bai12.StartedService"
+            android:enabled="true" />
+        <service android:name=".Bai12.BoundService" />
+
+        <activity
+            android:name=".RecycleViewCardView"
+            android:label="@string/title_activity_recycle_view_card_view"></activity>
     </application>
 
 </manifest>

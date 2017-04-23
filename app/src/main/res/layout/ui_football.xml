@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@color/color_bkg_title_ui2">
@@ -58,23 +59,21 @@
                 android:layout_height="60dp"></android.support.design.widget.TabLayout>
         </LinearLayout>
     </RelativeLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent">
-        <ListView
-            android:id="@+id/lv_fb"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </ListView>
-    </LinearLayout>
-    <RelativeLayout
+    <ListView
+        android:id="@+id/lv_fb"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_alignParentBottom="true"
             android:background="@drawable/border4blacksolid">
 
             <LinearLayout
@@ -131,4 +130,4 @@
     </RelativeLayout>
 
 
-</LinearLayout>
+</RelativeLayout>

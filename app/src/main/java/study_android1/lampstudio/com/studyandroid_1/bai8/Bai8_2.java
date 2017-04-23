@@ -67,7 +67,8 @@ public class Bai8_2 extends Activity implements View.OnClickListener{
                 _mean = getDes();
                 word.setText(_word);
                 mean.setText(_mean);
-                Log.d(Bai8_2.class.getName(),"value "+getInternal_nam());
+                String value = getInternal_nam();
+                Log.d(Bai8_2.class.getName(),"value= "+value);
                 break;
         }
     }
@@ -77,6 +78,7 @@ public class Bai8_2 extends Activity implements View.OnClickListener{
         editor.putString(word_pref,des);
         editor.commit();
     }
+    int totalSize = 0;
     public String getWord(){
         return sharedPreferences.getString(key_pref,"");
     }
@@ -87,6 +89,8 @@ public class Bai8_2 extends Activity implements View.OnClickListener{
         try {
             FileOutputStream fileOutputStream = openFileOutput(internal_nam,MODE_PRIVATE);
             String total = "Word "+word+"des "+des;
+            totalSize = total.getBytes().length;
+            Log.d("Bai82", "totalSize=" + totalSize);
             fileOutputStream.write(total.getBytes());
             fileOutputStream.close();
         } catch (FileNotFoundException e) {
@@ -100,8 +104,12 @@ public class Bai8_2 extends Activity implements View.OnClickListener{
             FileInputStream fileInputStream = openFileInput(internal_nam);
             byte[] buffer = new byte[1024];
             fileInputStream.read(buffer);
+            for (int i = 0; i < buffer.length; i++) {
+                Log.d("Bai823", "data=" + buffer[i]);
+            }
             fileInputStream.close();
             String data = new String(buffer);
+            Log.d("Bai82", "data=" + data);
             return data;
         } catch (FileNotFoundException e) {
             e.printStackTrace();

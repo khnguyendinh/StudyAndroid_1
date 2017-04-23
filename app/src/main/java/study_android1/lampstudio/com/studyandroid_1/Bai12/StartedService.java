@@ -29,6 +29,15 @@ public class StartedService extends IntentService {
         Log.d(StartedService.class.getName(),"onStartCommand service");
         mediaPlayer = MediaPlayer.create(StartedService.this, R.raw.bonghongthuytinh);
         mediaPlayer.start();
+        for (int i = 0;i < 999999;i++) {
+            Log.d("Service",i + "");
+            if (i == 5000) {
+//                stopSelf();
+                Log.d("Service", "stopservie");
+                break;
+
+            }
+        }
         return super.onStartCommand(intent, flags, startId);
     }
 
@@ -40,8 +49,14 @@ public class StartedService extends IntentService {
 
     @Override
     public void onDestroy() {
-        Log.d(StartedService.class.getName(),"onDestroy service");
-        mediaPlayer.stop();
         super.onDestroy();
+        Log.d(StartedService.class.getName(),"onDestroy service");
+        if(mediaPlayer.isPlaying()) {
+            mediaPlayer.stop();
+            mediaPlayer.release();
+        }
+        if(mediaPlayer == null ){
+            Log.d(StartedService.class.getName(),"onDestroy end");
+        }
     }
 }

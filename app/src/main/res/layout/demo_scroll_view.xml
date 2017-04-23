@@ -126,6 +126,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Bai 12"/>
+            <Button
+                android:id="@+id/bai_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bai bai_recycle_view"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -83,4 +83,5 @@
     <string name="title_activity_bai11">Bai11</string>
     <string name="title_activity_dat_cuoc">Dat_cuoc</string>
     <string name="title_activity_bai12">Bai12</string>
+    <string name="title_activity_recycle_view_card_view">RecycleViewCardView</string>
 </resources>

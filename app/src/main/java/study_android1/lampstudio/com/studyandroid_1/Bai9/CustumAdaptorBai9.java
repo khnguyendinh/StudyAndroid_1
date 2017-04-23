@@ -2,6 +2,7 @@ package study_android1.lampstudio.com.studyandroid_1.Bai9;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +26,7 @@ public class CustumAdaptorBai9 extends BaseAdapter {
         this.mData = mData;
         this.mContext = mContext;
         layoutInflater = LayoutInflater.from(mContext);
+        Log.d("Customadapter", "CustumAdaptorBai9 size="+ mData.size());
     }
 
     @Override
@@ -46,13 +48,15 @@ public class CustumAdaptorBai9 extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder viewHolder;
         if(view == null){
-            view = layoutInflater.inflate(R.layout.bai9_item,viewGroup);
+            view = layoutInflater.inflate(R.layout.bai9_item, viewGroup, false);
             viewHolder = new ViewHolder();
             viewHolder.imageView = (ImageView) view.findViewById(R.id.iv);
             view.setTag(viewHolder);
         }else {
             viewHolder = (ViewHolder) view.getTag();
         }
+        Log.d("Customadapter", "size="+ mData.size());
+        viewHolder.imageView.setImageBitmap(mData.get(i));
         return view;
     }
     public class ViewHolder{

@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -23,7 +24,9 @@ public class Bai6 extends AppCompatActivity implements AdapterView.OnItemClickLi
     Button btnShow;
     ListView listView;
     ArrayList<ItemModel> data;
+    ArrayList<String> dataS;
     CustomAdapter arrayAdapter;
+    ArrayAdapter<String> arrayAdapterString;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,13 +40,19 @@ public class Bai6 extends AppCompatActivity implements AdapterView.OnItemClickLi
         ItemModel itemModel4 = new ItemModel("nguyen van D",R.drawable.icon_camera);
         ItemModel itemModel5 = new ItemModel("nguyen van E",R.drawable.icon_camera);
         data = new ArrayList<>();
+        dataS = new ArrayList<>();
         data.add(itemModel1);
         data.add(itemModel2);
         data.add(itemModel3);
         data.add(itemModel4);
         data.add(itemModel5);
         arrayAdapter = new CustomAdapter(Bai6.this, data);
-        listView.setAdapter(arrayAdapter);
+        for (int i = 0; i < 10; i++) {
+            dataS.add("nguyen van "+i);
+        }
+        arrayAdapterString = new ArrayAdapter<String>(Bai6.this,android.R.layout.simple_list_item_1,dataS);
+//        listView.setAdapter(arrayAdapter);
+        listView.setAdapter(arrayAdapterString);
         listView.setOnItemClickListener(this);
         btnShow.setOnClickListener(this);
 

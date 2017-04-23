@@ -46,35 +46,36 @@ public class Bai9 extends Activity implements View.OnClickListener{
         switch (view.getId()){
             case R.id.btn_contact:
                 mData = getContact();
-                adapter = new ArrayAdapter<String>(Bai9.this,android.R.layout.simple_expandable_list_item_1,mData);
+                adapter = new ArrayAdapter<String>(Bai9.this,android.R.layout.simple_list_item_1,mData);
                 listView.setAdapter(adapter);
                 break;
             case R.id.btn_music:
                 mData = getMusic();
-                adapter = new ArrayAdapter<String>(Bai9.this,android.R.layout.simple_expandable_list_item_1,mData);
+                adapter = new ArrayAdapter<String>(Bai9.this,android.R.layout.simple_list_item_1,mData);
                 listView.setAdapter(adapter);
                 break;
             case R.id.btn_img:
                 mDataB = getImage();
                 Log.d(Bai9.class.getName(),"count "+mDataB.size());
                 adapter9 = new CustumAdaptorBai9(mDataB,Bai9.this);
-                listView.setAdapter(adapter9);
+                gridView.setAdapter(adapter9);
                 break;
         }
     }
     public ArrayList<String> getContact(){
         ArrayList<String> data= new ArrayList<>();
-//        Cursor cursor = getContentResolver().query(ContactsContract.Contacts.CONTENT_URI,new String[]{ContactsContract.Contacts.DISPLAY_NAME},
-//                null,null,ContactsContract.Contacts.DISPLAY_NAME+" ASC");
-        CursorLoader cursorLoader = new CursorLoader(Bai9.this,ContactsContract.Contacts.CONTENT_URI,new String[]{ContactsContract.Contacts.DISPLAY_NAME},
-                null,null,null);
-        Cursor cursor = cursorLoader.loadInBackground();
+        Cursor cursor = getContentResolver().query(ContactsContract.Contacts.CONTENT_URI,new String[]{ContactsContract.Contacts.DISPLAY_NAME},
+                null,null,ContactsContract.Contacts.DISPLAY_NAME+" ASC");
+//        CursorLoader cursorLoader = new CursorLoader(Bai9.this,ContactsContract.Contacts.CONTENT_URI,new String[]{ContactsContract.Contacts.DISPLAY_NAME},
+//                null,null,null);
+//        Cursor cursor = cursorLoader.loadInBackground();
         if(cursor != null && cursor.moveToFirst()){
             do {
                 String item = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
                 data.add(item);
             }
             while (cursor.moveToNext());
+            Log.d("bai9",data.size()+"");
         }
         return data;
     }
@@ -96,18 +97,20 @@ public class Bai9 extends Activity implements View.OnClickListener{
     }
     public ArrayList<Bitmap> getImage(){
         ArrayList<Bitmap> data = new ArrayList<>();
-        CursorLoader cursorLoader = new CursorLoader(Bai9.this, MediaStore.Images.Media.INTERNAL_CONTENT_URI,new String[]{MediaStore.Images.Media._ID},
+        CursorLoader cursorLoader = new CursorLoader(Bai9.this, MediaStore.Images.Media.EXTERNAL_CONTENT_URI, new String[]{MediaStore.Images.Media._ID},
                 null,null,null);
         Cursor cursor = cursorLoader.loadInBackground();
         Log.d(Bai9.class.getName(),"index start ");
         if(cursor != null && cursor.moveToFirst()){
+            int count =0 ;
             do {
                 int item = cursor.getInt(cursor.getColumnIndex(MediaStore.Images.Media._ID));
                 Log.d(Bai9.class.getName(),"index "+item);
-                data.add(MediaStore.Images.Thumbnails.getThumbnail(getContentResolver(),item, MediaStore.Images.Thumbnails.MINI_KIND,
+                data.add(MediaStore.Images.Thumbnails.getThumbnail(getContentResolver(),item, MediaStore.Images.Thumbnails.MICRO_KIND,
                         null));
+                count++;
             }
-            while (cursor.moveToNext());
+            while (cursor.moveToNext() && count <= 5);
         }
 
         return data;

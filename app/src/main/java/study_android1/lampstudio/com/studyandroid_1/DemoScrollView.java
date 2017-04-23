@@ -43,6 +43,7 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         Button btnBai10 = (Button) findViewById(R.id.bai10);
         Button btnBai11 = (Button) findViewById(R.id.bai11);
         Button btnBai12 = (Button) findViewById(R.id.bai12);
+        Button btnBaiRecycle = (Button) findViewById(R.id.bai_recycle_view);
         btnUi1.setOnClickListener(this);
         btnUi2.setOnClickListener(this);
         btnUi3.setOnClickListener(this);
@@ -60,9 +61,11 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         btnBai7.setOnClickListener(this);
         btnBai8.setOnClickListener(this);
         btnBai8_2.setOnClickListener(this);
+        btnBai9.setOnClickListener(this);
         btnBai10.setOnClickListener(this);
         btnBai11.setOnClickListener(this);
         btnBai12.setOnClickListener(this);
+        btnBaiRecycle.setOnClickListener(this);
     }
 
     @Override
@@ -150,6 +153,10 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.bai12:
                 intent = new Intent(this,Bai12.class);
+                startActivity(intent);
+                break;
+            case R.id.bai_recycle_view:
+                intent = new Intent(this,RecycleViewCardView.class);
                 startActivity(intent);
                 break;
         }
