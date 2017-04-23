@@ -131,7 +131,15 @@
             android:name=".Bai111.Dat_cuoc"
             android:label="@string/title_activity_dat_cuoc"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Bai12.Bai12"
+            android:label="@string/title_activity_bai12"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan"></activity>
+        <service android:name=".Bai12.StartedService"/>
+        <service android:name=".Bai12.BoundService"/>
+
     </application>
 
 </manifest>

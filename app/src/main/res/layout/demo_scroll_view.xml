@@ -121,6 +121,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Bai 11"/>
+            <Button
+                android:id="@+id/bai12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bai 12"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
