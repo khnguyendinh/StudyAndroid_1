@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="study_android1.lampstudio.com.studyandroid_1.Bai15.Bai15">
+    <Button
+        android:id="@+id/btn_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alpha"/>
+    <Button
+        android:id="@+id/btn_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scale"/>
+    <Button
+        android:id="@+id/btn_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tránlate"/>
+    <Button
+        android:id="@+id/btn_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate"/>
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_animation"/>
+
+</LinearLayout>

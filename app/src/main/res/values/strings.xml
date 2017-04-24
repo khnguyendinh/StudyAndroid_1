@@ -84,4 +84,9 @@
     <string name="title_activity_dat_cuoc">Dat_cuoc</string>
     <string name="title_activity_bai12">Bai12</string>
     <string name="title_activity_recycle_view_card_view">RecycleViewCardView</string>
+    <string name="title_activity_bai13">Bai13</string>
+    <string name="title_activity_bai14">Bai14</string>
+    <string name="title_activity_notification_activity">Notification_activity</string>
+    <string name="title_activity_bai15">Bai15</string>
+    <string name="title_activity_bai16">Bai16</string>
 </resources>

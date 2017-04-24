@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.Button;
 
 import study_android1.lampstudio.com.studyandroid_1.Bai12.Bai12;
+import study_android1.lampstudio.com.studyandroid_1.Bai13.Bai13;
+import study_android1.lampstudio.com.studyandroid_1.Bai14.Bai14;
+import study_android1.lampstudio.com.studyandroid_1.Bai15.Bai15;
+import study_android1.lampstudio.com.studyandroid_1.Bai16.Bai16;
 import study_android1.lampstudio.com.studyandroid_1.Bai9.Bai9;
 import study_android1.lampstudio.com.studyandroid_1.bai10.Bai10;
 import study_android1.lampstudio.com.studyandroid_1.bai8.Bai8_2;
@@ -43,6 +47,10 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         Button btnBai10 = (Button) findViewById(R.id.bai10);
         Button btnBai11 = (Button) findViewById(R.id.bai11);
         Button btnBai12 = (Button) findViewById(R.id.bai12);
+        Button btnBai13 = (Button) findViewById(R.id.bai_13);
+        Button btnBai14 = (Button) findViewById(R.id.bai_14);
+        Button btnBai15 = (Button) findViewById(R.id.bai_15);
+        Button btnBai16 = (Button) findViewById(R.id.bai_16);
         Button btnBaiRecycle = (Button) findViewById(R.id.bai_recycle_view);
         btnUi1.setOnClickListener(this);
         btnUi2.setOnClickListener(this);
@@ -66,6 +74,10 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         btnBai11.setOnClickListener(this);
         btnBai12.setOnClickListener(this);
         btnBaiRecycle.setOnClickListener(this);
+        btnBai13.setOnClickListener(this);
+        btnBai14.setOnClickListener(this);
+        btnBai15.setOnClickListener(this);
+        btnBai16.setOnClickListener(this);
     }
 
     @Override
@@ -157,6 +169,22 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.bai_recycle_view:
                 intent = new Intent(this,RecycleViewCardView.class);
+                startActivity(intent);
+                break;
+            case R.id.bai_13:
+                intent = new Intent(this,Bai13.class);
+                startActivity(intent);
+                break;
+            case R.id.bai_14:
+                intent = new Intent(this,Bai14.class);
+                startActivity(intent);
+                break;
+            case R.id.bai_15:
+                intent = new Intent(this,Bai15.class);
+                startActivity(intent);
+                break;
+            case R.id.bai_16:
+                intent = new Intent(this,Bai16.class);
                 startActivity(intent);
                 break;
         }

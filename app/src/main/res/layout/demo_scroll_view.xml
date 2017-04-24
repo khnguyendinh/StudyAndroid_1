@@ -131,6 +131,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Bai bai_recycle_view"/>
+            <Button
+                android:id="@+id/bai_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bai 13"/>
+            <Button
+                android:id="@+id/bai_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bai 14"/>
+            <Button
+                android:id="@+id/bai_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bai 15"/>
+            <Button
+                android:id="@+id/bai_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bai 16"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
