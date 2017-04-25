@@ -177,6 +177,7 @@
             android:label="@string/title_activity_async_task_demo" />
         <activity
             android:name=".Handler.ThreadHandlerDemo"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:label="@string/title_activity_thread_handler_demo"></activity>
     </application>
 

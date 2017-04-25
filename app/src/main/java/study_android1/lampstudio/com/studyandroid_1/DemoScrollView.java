@@ -15,6 +15,7 @@ import study_android1.lampstudio.com.studyandroid_1.Bai15.Bai15;
 import study_android1.lampstudio.com.studyandroid_1.Bai16.Bai16;
 import study_android1.lampstudio.com.studyandroid_1.Bai9.Bai9;
 import study_android1.lampstudio.com.studyandroid_1.Fragment.Fragment;
+import study_android1.lampstudio.com.studyandroid_1.Handler.ThreadHandlerDemo;
 import study_android1.lampstudio.com.studyandroid_1.bai10.Bai10;
 import study_android1.lampstudio.com.studyandroid_1.bai8.Bai8_2;
 import study_android1.lampstudio.com.studyandroid_1.viewpager.Viewpager;
@@ -56,6 +57,7 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         Button btnBai16 = (Button) findViewById(R.id.bai_16);
         Button btnFragMent = (Button) findViewById(R.id.fragment);
         Button btnAsyntask = (Button) findViewById(R.id.asyntask);
+        Button btnHanler = (Button) findViewById(R.id.handler);
         Button btnViewpage = (Button) findViewById(R.id.viewpager);
         Button btnBaiRecycle = (Button) findViewById(R.id.bai_recycle_view);
         btnUi1.setOnClickListener(this);
@@ -87,6 +89,7 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         btnFragMent.setOnClickListener(this);
         btnViewpage.setOnClickListener(this);
         btnAsyntask.setOnClickListener(this);
+        btnHanler.setOnClickListener(this);
     }
 
     @Override
@@ -206,6 +209,10 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.asyntask:
                 intent = new Intent(this,AsyncTaskDemo.class);
+                startActivity(intent);
+                break;
+            case R.id.handler:
+                intent = new Intent(this,ThreadHandlerDemo.class);
                 startActivity(intent);
                 break;
         }
