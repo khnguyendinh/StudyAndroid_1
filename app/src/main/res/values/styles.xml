@@ -10,5 +10,7 @@
     <style name="Theme.Default" parent="@android:style/Theme.Holo.Light"></style>
     <style name="Theme.NoTitle" parent="@style/Theme.AppCompat.Light.NoActionBar"></style>
     <style name="Theme.FullScreen" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"></style>
-
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/anh512</item>
+    </style>
 </resources>

@@ -171,6 +171,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Bai Handler"/>
+            <Button
+                android:id="@+id/slashhscreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bai SlashScreen"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

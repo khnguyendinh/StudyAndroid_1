@@ -177,8 +177,17 @@
             android:label="@string/title_activity_async_task_demo" />
         <activity
             android:name=".Handler.ThreadHandlerDemo"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:label="@string/title_activity_thread_handler_demo"></activity>
+            android:label="@string/title_activity_thread_handler_demo"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".SplashScreen.SplashScreen"
+            android:theme="@style/SplashTheme"
+            android:label="@string/title_activity_splash_screen"
+            />
+        <activity
+            android:name=".SplashScreen.MainSlashScreen"
+            android:label="@string/title_activity_main_slash_screen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>
