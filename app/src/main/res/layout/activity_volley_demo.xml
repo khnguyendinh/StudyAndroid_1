@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="study_android1.lampstudio.com.studyandroid_1.volley.VolleyDemo">
+    <TextView
+        android:id="@+id/volleyDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_object_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Object Request"/>
+    <Button
+        android:id="@+id/btn_array_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Array Request"/>
+    <Button
+        android:id="@+id/btn_string_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="String Request"/>
+    <Button
+        android:id="@+id/btn_post_param"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Object Post param"/>
+    <Button
+        android:id="@+id/btn_request_headr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Object Request Header"/>
+    <Button
+        android:id="@+id/btn_request_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Object Request Image"/>
+    <Button
+        android:id="@+id/btn_voley_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Object volleycache"/>
+    <Button
+        android:id="@+id/btn_cancel_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Object cancel request"/>
+    <Button
+        android:id="@+id/btn_prioritization_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Object Request prioritization"/>
+    <ImageView
+        android:id="@+id/voley_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

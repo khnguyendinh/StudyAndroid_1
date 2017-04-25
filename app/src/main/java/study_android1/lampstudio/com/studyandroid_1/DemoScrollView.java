@@ -20,6 +20,7 @@ import study_android1.lampstudio.com.studyandroid_1.SplashScreen.SplashScreen;
 import study_android1.lampstudio.com.studyandroid_1.bai10.Bai10;
 import study_android1.lampstudio.com.studyandroid_1.bai8.Bai8_2;
 import study_android1.lampstudio.com.studyandroid_1.viewpager.Viewpager;
+import study_android1.lampstudio.com.studyandroid_1.volley.VolleyDemo;
 
 /**
  * Created by VS9 X64Bit on 19/04/2017.
@@ -62,6 +63,7 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         Button btnViewpage = (Button) findViewById(R.id.viewpager);
         Button btnBaiRecycle = (Button) findViewById(R.id.bai_recycle_view);
         Button btnSlashScreen = (Button) findViewById(R.id.slashhscreen);
+        Button btnVolley = (Button) findViewById(R.id.volleyDemo);
         btnUi1.setOnClickListener(this);
         btnUi2.setOnClickListener(this);
         btnUi3.setOnClickListener(this);
@@ -93,6 +95,7 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         btnAsyntask.setOnClickListener(this);
         btnHanler.setOnClickListener(this);
         btnSlashScreen.setOnClickListener(this);
+        btnVolley.setOnClickListener(this);
     }
 
     @Override
@@ -220,6 +223,10 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.slashhscreen:
                 intent = new Intent(this,SplashScreen.class);
+                startActivity(intent);
+                break;
+            case R.id.volleyDemo:
+                intent = new Intent(this,VolleyDemo.class);
                 startActivity(intent);
                 break;
         }

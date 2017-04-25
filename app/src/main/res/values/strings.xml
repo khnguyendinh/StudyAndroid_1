@@ -101,4 +101,5 @@
     <string name="title_activity_thread_handler_demo">ThreadHandlerDemo</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="title_activity_main_slash_screen">MainSlashScreen</string>
+    <string name="title_activity_volley_demo">VolleyDemo</string>
 </resources>
