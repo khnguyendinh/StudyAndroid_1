@@ -6,8 +6,8 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGEITE"/>
-    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGEITE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
 
     <application
         android:allowBackup="true"
@@ -159,11 +159,25 @@
             android:label="@string/title_activity_notification_activity" />
         <activity
             android:name=".Bai15.Bai15"
-            android:theme="@style/Theme.AppCompat.Light"
-            android:label="@string/title_activity_bai15" />
+            android:label="@string/title_activity_bai15"
+            android:theme="@style/Theme.AppCompat.Light" />
         <activity
             android:name=".Bai16.Bai16"
-            android:label="@string/title_activity_bai16"></activity>
+            android:label="@string/title_activity_bai16" />
+        <activity
+            android:name=".viewpager.Viewpager"
+            android:label="@string/title_activity_viewpager"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Fragment.Fragment"
+            android:label="@string/title_activity_fragment"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".AsyntaskDemo.AsyncTaskDemo"
+            android:label="@string/title_activity_async_task_demo" />
+        <activity
+            android:name=".Handler.ThreadHandlerDemo"
+            android:label="@string/title_activity_thread_handler_demo"></activity>
     </application>
 
 </manifest>

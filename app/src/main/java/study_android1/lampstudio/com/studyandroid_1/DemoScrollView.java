@@ -7,14 +7,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import study_android1.lampstudio.com.studyandroid_1.AsyntaskDemo.AsyncTaskDemo;
 import study_android1.lampstudio.com.studyandroid_1.Bai12.Bai12;
 import study_android1.lampstudio.com.studyandroid_1.Bai13.Bai13;
 import study_android1.lampstudio.com.studyandroid_1.Bai14.Bai14;
 import study_android1.lampstudio.com.studyandroid_1.Bai15.Bai15;
 import study_android1.lampstudio.com.studyandroid_1.Bai16.Bai16;
 import study_android1.lampstudio.com.studyandroid_1.Bai9.Bai9;
+import study_android1.lampstudio.com.studyandroid_1.Fragment.Fragment;
 import study_android1.lampstudio.com.studyandroid_1.bai10.Bai10;
 import study_android1.lampstudio.com.studyandroid_1.bai8.Bai8_2;
+import study_android1.lampstudio.com.studyandroid_1.viewpager.Viewpager;
 
 /**
  * Created by VS9 X64Bit on 19/04/2017.
@@ -51,6 +54,9 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         Button btnBai14 = (Button) findViewById(R.id.bai_14);
         Button btnBai15 = (Button) findViewById(R.id.bai_15);
         Button btnBai16 = (Button) findViewById(R.id.bai_16);
+        Button btnFragMent = (Button) findViewById(R.id.fragment);
+        Button btnAsyntask = (Button) findViewById(R.id.asyntask);
+        Button btnViewpage = (Button) findViewById(R.id.viewpager);
         Button btnBaiRecycle = (Button) findViewById(R.id.bai_recycle_view);
         btnUi1.setOnClickListener(this);
         btnUi2.setOnClickListener(this);
@@ -78,6 +84,9 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
         btnBai14.setOnClickListener(this);
         btnBai15.setOnClickListener(this);
         btnBai16.setOnClickListener(this);
+        btnFragMent.setOnClickListener(this);
+        btnViewpage.setOnClickListener(this);
+        btnAsyntask.setOnClickListener(this);
     }
 
     @Override
@@ -185,6 +194,18 @@ public class DemoScrollView extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.bai_16:
                 intent = new Intent(this,Bai16.class);
+                startActivity(intent);
+                break;
+            case R.id.fragment:
+                intent = new Intent(this,Fragment.class);
+                startActivity(intent);
+                break;
+            case R.id.viewpager:
+                intent = new Intent(this,Viewpager.class);
+                startActivity(intent);
+                break;
+            case R.id.asyntask:
+                intent = new Intent(this,AsyncTaskDemo.class);
                 startActivity(intent);
                 break;
         }
